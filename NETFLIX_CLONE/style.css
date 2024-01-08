@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    width: 100%;
+    height: 100%;
+}
+
+/* Main Section */
+#main{
+    background: linear-gradient(to top, rgba(19, 19, 19, 0.9),rgba(19, 19, 19, 0.6),rgba(19, 19, 19, 0.9)), url(images/homepage.jpg);
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1.5rem; 
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo img{
+    height: 25px;
+}
+.button select{
+    position: relative;
+    background: rgba(114, 112, 112, 0.1); 
+    border-radius : 4px;
+    padding: 5px;
+    padding-left: 20px;
+    color: #fff;
+}
+.button select option{
+    color: black;
+}
+.button .lang-icon{
+    position: absolute;
+    z-index: 1;
+    font-size: 1rem;
+    top: 25px;
+    padding: 5px;
+    color: #fff;
+}
+.button button{
+    background: rgb(193,17,25);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 13px;
+}
+.button button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.90rem;
+    font-weight: 600;
+}
+.button button:hover{
+    background: rgb(153,22,29);
+}
+.content{
+    color: #fff;
+    text-align: center;
+}
+.content h1{
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.content #para{
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+.content p{
+    margin-top: 1.7rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.get-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.get-start .email-box{
+    position: relative;
+    width: 90%;
+}
+.get-start .email-box input{
+    position: relative;
+    background: rgba(19, 19, 19, 0.7);
+    padding: 0.90rem 0.80rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.97rem;
+    width: 100%;
+    line-height: 1.5rem;
+    z-index: 1000;
+}
+.get-start .email-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 0.90rem;
+    padding: 1rem;
+    transition: .3s ease;
+    transform: translate(0) scale(1);
+}
+.get-start .email-box input:focus~label,
+.get-start .email-box input:valid~label{
+    transform: translate(-12px,-12px) scale(0.85);
+    margin-left: 0.10rem;
+}
+.get-start .email-box span{
+    color: rgb(193,17,25);
+    font-size: 0.80rem;
+    margin-left: 0.50rem;
+}
+.get-start button{
+    margin-top: 1rem;
+    background: rgb(193,17,25);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 22px;
+    margin-bottom: 1.2rem;
+    margin-left: 0.50rem;
+}
+.get-start button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.get-start button i{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.get-start button:hover{
+    background: rgb(153,22,29);
+}
+/* End Main Section */
+
+/* Features Section */
+.features-container{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 8px solid rgba(86, 83, 83,.5);
+}
+.features-container .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+.features-container .container .description{
+    text-align: center;
+}
+.features-container .container .description h1{
+    font-size: 2rem;
+}
+.features-container .container .description p{
+    font-size: 1.02rem;
+    margin-top: 1.3rem;
+    line-height: 1.5rem;
+}
+.features-container .container .desc-img{
+    position: relative;
+    margin-top: 1rem; 
+} 
+.features-container .container .desc-img img{
+    height: 100%;
+    width: 100%; 
+}
+.features-container .feature-1 .desc-img video{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    width: 74%;
+}
+.features-container .feature-2 .desc-img .download{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 65%;
+    max-width: 80%;
+    background: #000;
+    padding: 5px 45px 5px 0;
+    border: 2px solid rgba(86, 83, 83,.9);
+    border-radius: 15px;
+}
+.features-container .feature-2 .desc-img .download .movie-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features-container .feature-2 .desc-img .download .movie-title img{
+    width: 35px;
+    margin-left: 5px;
+    padding: 1px;
+}
+.features-container .feature-2 .desc-img .download .movie-title .title{
+    display: block;
+    align-items: center;
+    margin-left: 10px;
+}
+.features-container .feature-2 .desc-img .download .movie-title .title h3{
+    font-size: 0.80rem;
+    font-weight: 500;
+    letter-spacing: 0.50px;
+}
+.features-container .feature-2 .desc-img .download .movie-title .title h4{
+    font-size: 0.70rem;
+    color: #0071eb;
+    padding-top: 3px;
+}
+.features-container .feature-2 .desc-img .download .download-icon{
+    width: 3rem;
+    height: 3rem;
+    margin-right: -2rem;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center no-repeat;
+    background-size: cover;
+}
+.features-container .feature-3 .desc-img video{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    width: 65%;
+}
+
+/* End Features Section */
+
+
+/* Questions Section */
+.faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    border-top: 8px solid rgba(86, 83, 83,.5);
+    padding: 0 2rem;
+}
+.faq h1{
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+.faq .accordion{
+    max-width: 80%;
+    min-width: 350px;
+    margin-top: 2rem;
+}
+.faq .accordion .box{
+    position: relative;
+    margin-bottom: 0.50rem;
+}
+.faq .accordion .box .ques{
+    position: relative;
+    padding:  20px ;
+    background: rgba(86, 83, 83,.4);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.faq .accordion .box .ques:hover{
+    background: rgba(86, 83, 83,.7);
+}
+.faq .accordion .box .ques::before,
+.faq .accordion .box.active .ques::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2rem;
+    font-weight: 100;
+    transition: .1s ease;
+}
+.faq .accordion .box.active .ques::before{
+    transform: translateY(-50%) rotate(-45deg);
+}
+.faq .accordion .box .ques::before{
+    transform: translateY(-50%);
+}
+.faq .accordion .box .ans{
+    position: relative;
+    margin-top: 0.10rem;
+    background: rgba(86, 83, 83,.4);
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    height: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    transition: .1s ease-out;
+}
+.faq .accordion .box.active .ans{
+    height: 100%;
+    padding: 20px;
+}
+.container .get-start{
+    margin-bottom: 2rem;
+}
+/* Questions Section */
+
+/* Footer Section */
+#footer{
+    border-top: 8px solid rgba(86, 83, 83,.5);
+    padding: 2rem 1.5rem;
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+#footer .call{
+    font-size: 1rem;
+} 
+#footer a{
+    color: rgba(255,255,255,0.7);
+}
+#footer .additional-settings{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.2rem 0;
+    justify-content: space-between;
+}
+#footer .additional-settings .col li{
+    list-style: none;
+    padding: 0.50rem 0.20rem;
+}
+#footer .button{
+    position: relative;
+}
+#footer .button .lang-icon{
+    position: absolute;
+    z-index: 1;
+    font-size: 1rem;
+    top: 1px;
+    padding: 5px;
+    color: #fff;
+}
+#footer .button h5{
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 14px;
+}
+/* End Footer Section */
+
+
+
+
+/* Media Query For Mobile */
+@media  screen and (min-width: 767px) {
+    .button select{
+        font-size: 1rem;
+    }
+    .button .lang-icon{
+        font-size: 1.1rem;
+    }
+    .content h1{
+        margin-top: 7rem;
+    }
+    .get-start{
+        flex-direction: row;
+    }
+    .button button{
+        padding: 10px 15px;
+    }
+    .get-start .email-box{
+        width: 50%;
+        margin-top: 1rem;
+    } 
+    .faq h1{
+        font-size: 3rem;
+        font-weight: 800;
+    }
+    .faq .accordion .box .ques{
+        padding: 30px;
+    }
+    .faq .accordion .box .ques,
+    .faq .accordion .box .ans{
+        font-size: 1.6rem;
+        line-height: 2rem;
+        letter-spacing: 1px;
+    }
+    .faq .accordion .box.active .ans{
+        padding: 30px;
+    }
+    .faq .accordion .box .ques::before,
+    .faq .accordion .box.active .ques::before{
+        font-size: 3rem;
+    }
+    .features-container .feature-2 .desc-img .download .movie-title img{
+        width: 50px;
+        padding: 4px;
+    }
+    .features-container .feature-2 .desc-img .download .movie-title .title h3{
+        font-size: 1rem;
+    }
+    .features-container .feature-2 .desc-img .download .movie-title .title h4{
+        font-size: .85rem;
+    }
+}
+/* End Media Query For Mobile */
+
+/* Media Query For Tablet */
+@media screen and (min-width: 992px) {
+    #main{
+        height: 100%;
+    }
+    #logo img{
+        height: 40px;
+    }
+    .button button{
+        margin-left: 1.2rem;
+    }
+    .button .lang-icon{
+        top: 30px;
+        font-size: 1.1rem;
+    }
+    .content h1{
+        margin-top: 10rem;
+        font-size: 3.2rem;
+        font-weight: 800;
+    }
+    .content #para{
+        font-size: 1.5rem;
+        margin-top: 1.2rem;
+    }
+    .content p{
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+    .get-start{
+        margin-top: 0;
+        margin-bottom: 5rem;
+    }
+    .get-start .email-box{
+        width: 30%;
+    }
+    .get-start .email-box input{
+        font-size: 1rem;
+    }
+    .get-start button a{
+        font-size: 1.5rem;
+    }
+    .get-start button i{
+        font-size: 1.5rem;
+    }
+    .features-container{
+        flex-direction: row;
+        /* padding: 3rem 0; */
+    }
+    .features-container .container{
+        margin: 1rem 0;
+    }
+    .features-container:nth-child(odd) .container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .features-container:nth-child(even) .container{
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .features-container .container .description{
+        text-align: left;
+        width: 50%;
+    }
+    .features-container .container .description h1{
+        font-size: 2.7rem;
+        font-weight: 800;
+    }
+    .features-container .container .description p{
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+    }
+    .features-container .container .desc-img{
+        margin: 0 1rem;
+        width: 50%;
+    } 
+    .features-container .feature-2 .desc-img .download .movie-title img{
+        width: 70px;
+        padding: 7px;
+    }
+    #footer .button .lang-icon{
+        font-size: 1.1rem;
+    }
+}
+/* End Media Query For Tablet */
+
+/* Media Query For Laptop */
+@media  screen and (min-width: 1023px) {
+    #main{
+        padding: 1.5rem 10rem;
+    }
+    .content{
+        padding: 0 2rem;
+    }
+    .features-container .container{
+        padding: 3rem 10rem;
+    } 
+    #footer{
+        padding: 3rem 10rem;
+    }
+}
+/* End Media Query For Laptop */
